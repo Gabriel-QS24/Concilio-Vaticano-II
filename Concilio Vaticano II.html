@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Díptico - Concilio Vaticano II</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .panel {
+            width: 45%;
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid #1e3d59;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .panel:hover {
+            transform: scale(1.05);
+        }
+
+        .panel h2 {
+            text-align: center;
+            color: #1e3d59;
+            font-size: 26px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .panel p {
+            text-align: justify;
+            color: #34495e;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .panel img {
+            display: block;
+            margin: 15px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            border: 2px solid #34495e;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .panel p strong {
+            color: #1e3d59;
+            font-size: 18px;
+        }
+
+        .highlight-box {
+            background-color: #eaf0f7;
+            border-left: 5px solid #1e3d59;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .credits {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #1e3d59;
+            color: #ffffff;
+            font-size: 14px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .panel {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Frente del díptico -->
+    <div class="panel">
+        <h2>¿Qué fue el Concilio Vaticano II?</h2>
+        <img src="concilio_vaticano.jpg" alt="Concilio Vaticano II">
+        <p>
+            El <span class="highlight">Concilio Vaticano II</span> fue el vigésimo primer concilio ecuménico de la Iglesia Católica. Se llevó a cabo entre los años 1962 y 1965 bajo los pontificados de los papas Juan XXIII y Pablo VI. Este concilio marcó un punto de inflexión en la relación entre la Iglesia y el mundo moderno.
+        </p>
+        <div class="highlight-box">
+            <p>Las reformas del Concilio afectaron la liturgia, la estructura de la Iglesia, la relación con otras religiones y el enfoque pastoral, permitiendo celebraciones litúrgicas en lenguas vernáculas.</p>
+        </div>
+        <img src="padres_concilio.jpeg" alt="Padres del Concilio Vaticano II">
+    </div>
+
+    <!-- Reverso del díptico -->
+    <div class="panel">
+        <h2>Documentos Clave del Concilio</h2>
+        <p><strong>Gaudium et Spes (1965):</strong> Es la Constitución Pastoral sobre la Iglesia en el mundo actual. Este documento aborda temas como la dignidad del ser humano, el matrimonio, la economía, y la paz mundial.</p>
+        <img src="relacion_iglesia_mundo.webp" alt="Relación entre Iglesia y mundo">
+        <p><strong>Lumen Gentium (1964):</strong> Documento sobre la estructura de la Iglesia. Subraya que la Iglesia está formada no solo por el clero, sino también por los laicos, quienes tienen un papel importante.</p>
+        <img src="lumen_gentium.webp" alt="Documento Lumen Gentium">
+        <p><strong>Dei Verbum (1965):</strong> Se enfoca en la Revelación Divina y destaca la importancia de la Biblia y la Tradición en la vida cristiana. Promueve el acceso de los fieles a la Sagrada Escritura.</p>
+        <img src="dei_verbum.jpeg" alt="Documento Dei Verbum">
+    </div>
+</div>
+
+<div class="credits">
+    <p>Creado por: Luis Gabriel | 3ro | James Baldwin</p>
+</div>
+
+</body>
+</html>
